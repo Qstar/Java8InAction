@@ -12,6 +12,10 @@ public class Book {
         Arrays.asList(authors).stream().forEach(a -> {
             System.out.println(a.name());
         });
+
+        Arrays.stream(authors).forEach(a -> System.out.println(a.name()));
+
+        Arrays.asList(authors).forEach(a -> System.out.println(a.name()));
     }
 
 }
